@@ -4,10 +4,10 @@ mult();
 
 function mult () {
     for (i = 0; i < 1000; i++) {
-        if (i % 3 == 0 || i % 5 == 0) {
+        if (i % 3 == 0 && i % 5 == 0) {
             sum += i;
+            console.log(i);
         }
     }
 }
 
-console.log(sum);
